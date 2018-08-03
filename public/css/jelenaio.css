@@ -82,7 +82,7 @@
 
 img {
   height: 80%;
-  width: 80%;
+  width: 100%;
 }
 
 #skydive-img{
@@ -92,12 +92,9 @@ img {
 }
 
 .bg-tech {
-  background-image: url("../css/img/bg-tech.png");
+  background-image: url("../css/img/bg-clogs.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 0px;
-  padding: 0px;
-  background-attachment: scroll;
+  background-size: 100% 100%;
 }
 
 li {
@@ -136,6 +133,10 @@ li {
   margin-bottom: 40px;
 }
 
+.fnt-white {
+  color: #ffffff;
+}
+
 .dotted-block-text {
   color: #000000;
   font-family: 'Source Code Pro', monospace !important;
@@ -167,7 +168,10 @@ li {
 
 .pl-xl {
   padding-left: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
 ul {
   padding-left: 36px;
 }
@@ -177,10 +181,51 @@ li {
   padding-top: 3px;
 }
 
+.btn-txt{
+  margin-top: -18px;
+  text-align: center;
+}
+
 .blue {
   background-color: #355C7D;
 }
 
+.outline-white {
+  background-color: transparent;
+  background-image: none;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.outline-white:hover {
+  color: #F67280;
+  background-color: #ffffff;
+}
+
+.outline-pink {
+  background-color: transparent;
+  background-image: none;
+  border-color: #F67280;
+  color: #F67280;
+}
+
+.outline-pink:hover {
+  color: #ffffff;
+  background-color: #F67280;
+}
+
+.border-pink {
+  border-radius: 20px;
+  border-color: #F67280;
+  border-style: double;
+  border-width: medium;
+  padding: 20px;
+}
+
+#awards {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
 .blue-outline {
   color: #355C7D;
   border-color: #355C7D;
@@ -202,6 +247,10 @@ li {
 
 .pink, .btn-circle:hover {
   background-color: #F67280;
+}
+
+.fnt-pink {
+  color: #F67280;
 }
 
 .purple, .btn-menu:hover {

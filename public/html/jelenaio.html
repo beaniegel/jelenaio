@@ -30,17 +30,17 @@
         </div>
       </header>
       <main>
-        <div class="row page-title mx-auto justify-content-md-center">
+        <div class="row page-title mx-auto justify-content-md-center" id="about">
           <h1 col-md-auto> ./about </h1>
         </div>
-        <div class="row dotted-block mx-auto">
+        <div class="row dotted-block mx-auto" id="me">
             <div class="col-md-auto dotted-block-text">
               <p>.me { </p>
               <p class="dotted-block-text-indent"> name: Jelena Noya </br> location: Bristol, UK </br> language: English, Dutch </p>
               <p> } </p>
             </div>
         </div>
-        <div class="row block-basic mx-auto justify-content-md-center">
+        <div class="row block-basic mx-auto justify-content-md-center" id="about-buttons">
             <div class="col-md-1 btn btn-circle pop blue">
               <span class="fas fa-heart icon-lg" aria-hidden="true"></span>
             </div>
@@ -54,11 +54,11 @@
               <span class="fas fa-award"></span>
             </div>
         </div>
-        <div class="row block-solid indigo">
+        <div class="row block-solid indigo" id="like">
           <div class="col-md-6" id="skydive-img"></div>
           <div class="col-md-5 block-solid-text pl-xl">
             <div class="row block-title">
-              <div class="col-md-12">
+              <div class="col-md-12 center">
                 <span class="fas fa-heart icon-md" aria-hidden="true"></span>
                 <h3 class="icon-text">Things I like doing:</h3>
               </div>
@@ -78,86 +78,90 @@
             </div>
           </div>
         </div>
-        <div class="row block-basic fnt-black mx-auto justify-content-md-center">
-          <div class="col-md-3">
-            <div class="row mx-auto justify-content-md-center">
-              <div class="col-md-auto">
-                <span class="fas fa-code icon-md" aria-hidden="true"></span>
-                <h3 class="icon-text block-title">Languages</h3>
+        <div class="row bg-tech" id="tech">
+          <div class="col-md-12">
+            <div class="row block-basic fnt-black mx-auto justify-content-md-center">
+              <div class="col-md-3">
+                <div class="row mx-auto justify-content-md-center">
+                  <div class="col-md-auto">
+                    <span class="fas fa-code icon-md" aria-hidden="true"></span>
+                    <h3 class="icon-text block-title">Languages</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>C</p>
+                    <p>Javascript</p>
+                    <p>Java</p>
+                    <p>SQL</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row mx-auto justify-content-md-center">
+                  <div class="col-md-auto">
+                    <span class="fas fa-code icon-md" aria-hidden="true"></span>
+                    <h3 class="icon-text">Interests</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>Software engineering</p>
+                    <p>Privacy & security</p>
+                    <p>Computer architecture</p>
+                    <p>Robotics</p>
+                    <p>IT education</p>
+                    <p>Augmented & virtual reality</p>
+                    <p>UI/UX</p>
+                    <p>FOSS</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="row mx-auto justify-content-md-center">
+                  <div class="col-md-auto">
+                    <span class="fas fa-code icon-md" aria-hidden="true"></span>
+                    <h3 class="icon-text">Technologies</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p>Bootstrap</p>
+                    <p>Nodejs</p>
+                    <p>Express</p>
+                    <p>Unity</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p>C</p>
-                <p>Javascript</p>
-                <p>Java</p>
-                <p>SQL</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="row mx-auto justify-content-md-center">
-              <div class="col-md-auto">
-                <span class="fas fa-code icon-md" aria-hidden="true"></span>
-                <h3 class="icon-text">Interests</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p>Software engineering</p>
-                <p>Privacy & security</p>
-                <p>Computer architecture</p>
-                <p>Robotics</p>
-                <p>IT education</p>
-                <p>Augmented & virtual reality</p>
-                <p>UI/UX</p>
-                <p>FOSS</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="row mx-auto justify-content-md-center">
-              <div class="col-md-auto">
-                <span class="fas fa-code icon-md" aria-hidden="true"></span>
-                <h3 class="icon-text">Technologies</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p>Bootstrap</p>
-                <p>Nodejs</p>
-                <p>Express</p>
-                <p>Unity</p>
+            <div class="row block-basic justify-content-md-center">
+              <div class="col-md-auto orange-faded dotted-border">
+                <div class="row justify-content-md-center">
+                  <div class="col-md-auto">
+                    <span class="fas fa-code icon-md " aria-hidden="true"></span>
+                    <h3 class="icon-text block-title">For more of my tech stuff, check out:</h3>
+                  </div>
+                </div>
+                <div class="row text-center justify-content-md-center">
+                  <div class="col">
+                    <span class="fab fa-github fa-4x" aria-hidden="true"></span>
+                  </div>
+                  <div class="col">
+                    <span class="fas fa-cubes fa-4x" aria-hidden="true"></span>
+                  </div>
+                  <div class="w-100"></div>
+                  <div class="col">
+                    <p> My GitHub </p>
+                  </div>
+                  <div class="col">
+                    <p> My Projects </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row block-basic justify-content-md-center">
-          <div class="col-md-auto orange-faded dotted-border">
-            <div class="row justify-content-md-center">
-              <div class="col-md-auto">
-                <span class="fas fa-code icon-md " aria-hidden="true"></span>
-                <h3 class="icon-text block-title">For more of my tech stuff, check out:</h3>
-              </div>
-            </div>
-            <div class="row text-center justify-content-md-center">
-              <div class="col">
-                <span class="fab fa-github fa-4x" aria-hidden="true"></span>
-              </div>
-              <div class="col">
-                <span class="fas fa-cubes fa-4x" aria-hidden="true"></span>
-              </div>
-              <div class="w-100"></div>
-              <div class="col">
-                <p> My GitHub </p>
-              </div>
-              <div class="col">
-                <p> My Projects </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row block-basic education">
+        <div class="row block-basic education" id="edu-1">
           <div class="col-md-auto mx-auto justify-content-md-center blue-outline">
             <div class="col">
               <span class="fas fa-graduation-cap fa-4x blue-icon" aria-hidden="true"></span>
@@ -182,7 +186,7 @@
         <div class="row" id="timeline">
           <img src="../css/img/edu-timeline.svg" id="timeline">
         </div>
-        <div class="row block-basic">
+        <div class="row block-basic" id="edu2">
           <div class="col-md-auto mx-auto justify-content-md-center blue-outline">
             <div class="col-md-auto">
               <span class="fas fa-graduation-cap fa-4x blue-icon" aria-hidden="true"></span>
@@ -194,8 +198,42 @@
             </div>
           </div>
         </div>
-        <div class="row block-basic">
+        <div class="row block-basic justify-content-md-center" id="awards">
+          <div class="col-md-4 border-pink pink mx-5">
+            <div class="row">
+              <div class="col-md-auto mx-auto fnt-white">
+                <span class="fas fa-award icon-md"></span>
+                <h3 class="block-title icon-text"> Awards, courses and certificates </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 mx-auto center">
+                <div class="btn outline-white mx-2 my-2"> Django Girls Amsterdam<br><i>Web development<br>Course, 2016</i></div>
+                <div class="btn outline-white mx-2 my-2"> Google Adwords <br><i>Online marketing<br>Certificate, 2016</i></div>
+                <div class="btn outline-white mx-2 my-2"> Development Bootcamp<br><i>Web development<br>Course, 2015</i></div>
+                <div class="btn outline-white mx-2 my-2"> The Big Pitch<br><i>Digital entrepeneurship<br>Award (second prize), 2014</i></div>
+                <div class="btn outline-white mx-2 my-2"> Study India Programme<br><i> Culture, language and marketing<br>Course, 2013</i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 border-pink mx-5">
+            <div class="row">
+              <div class="col-md-auto mx-auto fnt-pink">
+                <span class="fas fa-award icon-md"></span>
+                <h3 class="block-title icon-text"> Committees and volunteering </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10 mx-auto center">
+                <div class="btn outline-pink mx-2 my-2"> Amsterdam Datacenter Group<br><i>System administrator<br>Volunteering, 2016</i></div>
+                <div class="btn outline-pink mx-2 my-2"> CamFM Radio<br><i>Head of news<br>Committee, 2013-2014</i></div>
+                <div class="btn outline-pink mx-2 my-2"> CamFM Radio<br><i>Deputy head of news<br>Committee, 2012-2013</i></div>
+                <div class="btn outline-pink mx-2 my-2"> Greenpeace Society<br><i>Graphic designer<br>Volunteering, 2012-2014</i></div>
+                <div class="btn outline-pink mx-2 my-2"> Roots 'n' Shoots Society<br><i>Graphic designer<br>Volunteering, 2012-2014</i></div>
+              </div>
+            </div>
 
+          </div>
         </div>
       </main>
     </div>
