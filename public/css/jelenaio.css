@@ -1,3 +1,5 @@
+/* block styles */
+
 .block-basic {
   margin-top: 150px;
   margin-bottom: 150px;
@@ -12,9 +14,6 @@
   color: #FFFFFF;
 }
 
-.text-center {
-  text-align: center;
-}
 .block-rounded {
   margin: 40px;
   padding: 40px;
@@ -22,6 +21,8 @@
   margin-bottom: 40px;
   padding-top: 20px;
   color: #FFFFFF;
+  width: 100px;
+  height: 100px;
 }
 
 .block-solid-text {
@@ -29,15 +30,30 @@
   margin-left: 40px;
 }
 
+.block-title {
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 20px;
+}
+
+.logo-circle {
+  border-radius: 50%;
+  border: solid;
+  height: 200px;
+  border-color: black;
+  margin: 30px;
+}
+
 .check-out {
   margin-top: 40px;
   margin-bottom: 60px;
 }
 
-.block-title {
-  font-family: 'Indie Flower', cursive;
-  margin-bottom: 20px;
+.text-center {
+  display: flex;
+  align-items: center;
+  margin: 0px;
 }
+
 
 .btn-circle {
   border-radius: 50%;
@@ -91,6 +107,14 @@ img {
   background-size: 100% 100%;
 }
 
+#transip-logo{
+  background-image: url("../css/img/transip.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80% 80%;
+}
+
+
 .bg-tech {
   background-image: url("../css/img/bg-clogs.png");
   background-repeat: no-repeat;
@@ -114,11 +138,40 @@ li {
 }
 
 .dotted-border {
-  border-color: #F8B195;
-  border-style: double;
+  border-color: inherit;
+  border-style: dotted;
+  border-width: thick;
   border-radius: 20px;
   padding: 20px;
 }
+
+.rounded-left {
+  color:inherit;
+  border-bottom-left-radius: : 20px;
+  border-top-left-radius: 20px
+}
+
+.rounded-right {
+  color:inherit;
+  border-bottom-right-radius: : 20px;
+  border-top-right-radius: 20px
+}
+
+.double-border {
+  border-color: inherit;
+  border-style: double;
+  border-width: medium;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.rounded-border {
+  border-style: solid;
+  color:inherit;
+  border-radius: 20px;
+  padding: 50px;
+}
+
 .view-more{
   text-align: left;
   vertical-align: middle;
@@ -152,6 +205,7 @@ li {
   margin-top: -100px;
   margin-bottom: -50px;
 }
+
 .dotted-block-text-indent {
   padding-left: 30px;
 }
@@ -170,6 +224,7 @@ li {
   margin-top: 250px;
   margin-bottom: 150px;
 }
+
 .pl-xl {
   padding-left: 150px;
   padding-top: 10px;
@@ -218,6 +273,23 @@ li {
   background-color: #F67280;
 }
 
+a {
+  color: inherit;
+}
+
+.btn-black {
+  color: black;
+}
+
+.faded-indigo {
+  background-color: #7a6b88;
+  border-color: #6C5B7B;
+}
+
+.btn-black:hover {
+  color: #6C5B7B;
+}
+
 .border-pink {
   border-radius: 20px;
   border-color: #F67280;
@@ -249,11 +321,24 @@ li {
   color: black;
 }
 
-.pink, .btn-circle:hover {
+.fnt-blue, .btn-horange:hover {
+  color: #355C7D;
+}
+
+.border-blue {
+  border-color: #355C7D;
+}
+
+.btn-circle:hover {
+  color: #FFFFFF;
   background-color: #F67280;
 }
 
-.fnt-pink {
+.pink {
+  background-color: #F67280;
+}
+
+.fnt-pink, .btn-hpink:hover {
   color: #F67280;
 }
 
@@ -265,6 +350,10 @@ li {
   background-color: #6C5B7B;
 }
 
+.fnt-indigo {
+  color: #6C5B7B;
+}
+
 .orange {
   background-color: #F8B195;
 }
@@ -272,19 +361,14 @@ li {
 .fnt-black {
   background-color: inherit;
   color: black;
-/*  border-style: dotted;
-  border-width: thick;
-  border-color: #F8B195;; */
 }
 
 .orange-faded {
+  border-color:  #F8B195;
   background-color: #fbd4c5;
 }
 
-.fnt-orange {
+.fnt-orange, {
   background-color: inherit;
   color: #F8B195;
-/*  border-style: dotted;
-  border-width: thick;
-  border-color: #F8B195;; */
 }
