@@ -17,23 +17,42 @@ function openJob(){
   animate(job);
 }
 
+function findLocation(elem) {
+  var id = document.getElementById(elem);
+  var goal = id.getBoundingClientRect();
+  return goal;
+}
+
+function setTarget(job) {
+  var target = findLocation("job-temp");
+  var curr = findLocation(job);
+  var tX = target.x - curr.x;
+  var tY = target.y - curr.y;
+  return { x: tX, y: tY };
+}
+
 function animate(job) {
   var logo = document.getElementById(job);
-  var x = 0; var y = 0; var mX = 910; var mY = 0;
-  var id = setInterval(animation, 0.5);
+  var t = setTarget(job);
+  var x = 0 ; var y = 0;
+  var id = setInterval(animation, 4);
+  console.log("target: x = ", t.x," y = ", t.y);
   function animation() {
-    if (x == mX && y == mY) {
+    if (x == t.x && y == t.y) {
+      console.log("THE END");
       clearInterval(id);
       showContent();
     }
     else {
-      if (x < mX) {
+      if (x < t.x) {
         x++;
         logo.style.left = x + 'px';
+        console.log("x move: x = ", x, " y = ", y);
       }
-      if (y < mY) {
-        y++;
+      if (y > t.y) {
+        y--;
         logo.style.top = y + 'px';
+        console.log("y move: x = ", x, " y = ", y);
       }
     }
   }
