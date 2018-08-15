@@ -327,6 +327,13 @@ a {
   background-color: #F67280;
 }
 
+.job-descr {
+  text-align: center;
+}
+
+.hide {
+  color: white;
+}
 .block-jobs {
   margin-top: -50px;
   color: black;
@@ -334,39 +341,23 @@ a {
   vertical-align: middle;
 }
 
-.block-jobs-descr {
-  margin-top: -50px;
-  text-align: center;
-  vertical-align: middle;
-  align-self: flex-end;
-}
-
-.alljobs {
-  position: absolute;
+#job-temp {
+  margin-top: -25px;
+  border-style: hidden;
 }
 
 .job {
   position: relative;
-  margin: 30px 30px 30px 30px;
+  margin: 30px;
   height: 150px;
-  width: 150px;
   border-radius: 100%;
   border-width: thick;
   border-style: solid;
   vertical-align: middle;
 }
 
-.job-m {
-  margin: 30px 30px 30px 120px;
-}
-
-.job-b {
-  margin: 30px 30px 30px 250px;
-}
-
 .job-main {
   margin: 10px;
-  width: 220px;
   height: 220px;
   border-radius: 100%;
   border-width: thick;

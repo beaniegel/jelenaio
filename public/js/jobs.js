@@ -15,28 +15,33 @@ function onClick(btnId) {
 function openJob(){
   var job = this.id;
   animate(job);
-//  showContent(job);
 }
 
 function animate(job) {
   var logo = document.getElementById(job);
-  var x = 0; var y = 0;
-  var id = setInterval(animation, 5);
+  var x = 0; var y = 0; var mX = 910; var mY = 0;
+  var id = setInterval(animation, 0.5);
   function animation() {
-    if (x == 750 && y == 0) {
+    if (x == mX && y == mY) {
       clearInterval(id);
+      showContent();
     }
     else {
-      if (x < 750) {
+      if (x < mX) {
         x++;
         logo.style.left = x + 'px';
       }
-      if (y < 0) {
+      if (y < mY) {
         y++;
         logo.style.top = y + 'px';
       }
     }
   }
+}
+
+function showContent() {
+  var id = document.getElementById("job-descr");
+  id.classList.remove("hide");
 }
 
 /* function showContent(job) {
