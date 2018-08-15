@@ -56,6 +56,7 @@ function detectBtns(page) {
       return;
     case "work":
       window.location.hash = "#work";
+      enableJobs();
       return;
     case "contact":
       window.location.hash = "#contact";

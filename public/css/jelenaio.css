@@ -104,14 +104,7 @@ img {
 #skydive-img{
   background-image: url("../css/img/dive.gif");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#transip-logo{
-  background-image: url("../css/img/transip.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80% 80%;
+  background-size:cover;
 }
 
 
@@ -332,6 +325,108 @@ a {
 .btn-circle:hover {
   color: #FFFFFF;
   background-color: #F67280;
+}
+
+.block-jobs {
+  margin-top: -50px;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.block-jobs-descr {
+  margin-top: -50px;
+  text-align: center;
+  vertical-align: middle;
+  align-self: flex-end;
+}
+
+.alljobs {
+  position: absolute;
+}
+
+.job {
+  position: relative;
+  margin: 30px 30px 30px 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  border-width: thick;
+  border-style: solid;
+  vertical-align: middle;
+}
+
+.job-m {
+  margin: 30px 30px 30px 120px;
+}
+
+.job-b {
+  margin: 30px 30px 30px 250px;
+}
+
+.job-main {
+  margin: 10px;
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  border-width: thick;
+  border-style: solid;
+}
+
+#transip{
+  background-image: url("../css/img/transip.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #1f4278;
+}
+
+#lek{
+  background-image: url("../css/img/lek.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #005c42;
+}
+
+#bain{
+  background-image: url("../css/img/bain.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #cc0001;
+}
+
+#iff{
+  background-image: url("../css/img/iff.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #1463ad;
+}
+
+#camfm{
+  background-image: url("../css/img/camfm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #ffd42a;
+}
+
+#cedar{
+  background-image: url("../css/img/cedar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #4f4f4f;
+}
+
+#gj{
+  background-image: url("../css/img/gj.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #6eb51b;
 }
 
 .pink {
