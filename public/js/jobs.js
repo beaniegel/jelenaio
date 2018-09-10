@@ -1,82 +1,105 @@
 "use strict"
 
 function enableJobs() {
-  var jobs = ["transip", "lek", "bain", "iff", "camfm", "cedar", "gj"];
-  for (var i = 0; i < jobs.length; i++) {
-    onClick(jobs[i]);
+  var logo = ["lek", "bain", "iff", "camfm", "gj", "cedar", "transip"];
+  for (var i = 0; i < logo.length; i++) {
+    var btn = "btn" + (i+1);
+    onClick(btn, logo[i]);
+  }
+  showContent("transip");
+}
+
+function onClick(btnId, logo) {
+  var id = document.getElementById(btnId);
+  if (id) {
+    id.logo = logo;
+    if (btnId != "btn7") {
+      id.addEventListener("click", openJob);
+    }
   }
 }
 
-function onClick(btnId) {
-  var id = document.getElementById(btnId);
-  id.addEventListener("click", openJob);
+function openJob() {
+  disableClick(true);
+  var e = { middle: document.getElementById("main"),
+            current: document.getElementById(this.id),
+            target: document.getElementById("btn7")};
+  var t = setTarget(e.current, e.target);
+  prepareLogos(e.current, e.target);
+  removeDeprContent();
+  startAnimation(e, t);
 }
 
-function openJob(){
-  var job = this.id;
-  animate(job);
+function removeDeprContent() {
+  var div = document.getElementById("job-descr");
+  while (div.firstChild) {
+    div.removeChild(div.firstChild);
+  }
 }
 
-function findLocation(elem) {
-  var id = document.getElementById(elem);
-  var goal = id.getBoundingClientRect();
-  return goal;
-}
-
-function setTarget(job) {
-  var target = findLocation("job-temp");
-  var curr = findLocation(job);
-  var tX = target.x - curr.x;
-  var tY = target.y - curr.y;
+function setTarget(currId, targetId) {
+  var target = targetId.getBoundingClientRect();
+  var curr = currId.getBoundingClientRect();
+  var tX = target.left - curr.left;
+  var tY = target.top - curr.top;
   return { x: tX, y: tY };
 }
 
-function animate(job) {
-  var logo = document.getElementById(job);
-  var t = setTarget(job);
-  var x = 0 ; var y = 0;
-  var id = setInterval(animation, 4);
-  console.log("target: x = ", t.x," y = ", t.y);
-  function animation() {
-    if (x == t.x && y == t.y) {
-      console.log("THE END");
-      clearInterval(id);
-      showContent();
-    }
-    else {
-      if (x < t.x) {
-        x++;
-        logo.style.left = x + 'px';
-        console.log("x move: x = ", x, " y = ", y);
+function prepareLogos(curr, target) {
+  var depr = target.logo;
+  target.logo = curr.logo;
+  curr.logo = depr;
+  target.classList.remove(depr);
+  return true;
+}
+
+function disableClick(bool) {
+  var id = document.getElementById("jobwheel");
+  if (bool) {
+    id.classList.add("noClick");
+    return;
+  }
+  id.classList.remove("noClick");
+}
+
+function startAnimation(elem, target) {
+  var x = 0; var y = 0;
+  var tx = target.x; var ty = target.y
+  var ani = setInterval(animate, 25);
+  function animate() {
+    for (var i = 0; i < 20; i++) {
+      if (x >= tx && y <= ty) {
+        finaliseLogos(elem);
+        console.log("curr elem: ", elem.current);
+        showContent(elem.target.logo);
+        disableClick(false);
+        clearInterval(ani);
       }
-      if (y > t.y) {
-        y--;
-        logo.style.top = y + 'px';
-        console.log("y move: x = ", x, " y = ", y);
+      else {
+        if (x < tx) {
+          x++;
+          elem.current.style.left = x + 'px';
+        }
+        if (y > ty) {
+          y--;
+          elem.current.style.top = y + 'px';
+        }
       }
     }
   }
 }
 
-function showContent() {
-  var id = document.getElementById("job-descr");
-  id.classList.remove("hide");
+function finaliseLogos(elem) {
+  elem.target.classList.add(elem.target.logo);
+  elem.middle.classList.add(elem.target.logo);
+  elem.middle.classList.remove(elem.current.logo);
+  elem.current.classList.add(elem.current.logo);
+  elem.current.classList.remove(elem.target.logo);
+  elem.current.style.left = 0 + 'px';
+  elem.current.style.top = 0 +'px';
 }
 
-/* function showContent(job) {
-  $("#show-content").load("../html/" + job + ".html", function detect() {
+function showContent(job) {
+  console.log("current content = ", job);
+  $("#job-descr").load("../html/jobs/" + job + ".html");
 }
-
-
-@keyframes move {
-  0% { left: 0px; top:0px}
-  25% {left: 0px; top: -220px}
-  100% {left: 950px; top: -220px}
-}
-
-.move {
-  animation-name: move;
-  animation-duration: 5s;
-  animation-fill-mode:forwards;
-}
-*/

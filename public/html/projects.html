@@ -1,3 +1,140 @@
 <div class="row page-title mx-auto justify-content-md-center">
   <h1 col-md-auto> ./projects </h1>
+  <div class="w-100"></div>
+  <h2 class="fnt-black"> Filter projects:
+    <input class="category" type="checkbox" checked>tech</input>
+    <input class="category" type="checkbox" checked>DIY</input>
+    <input class="category" type="checkbox" checked>travel</input>
+    <input class="category" type="checkbox" checked>food</input>
+    <input class="category" type="checkbox" checked>health</input>
+    <input class="category" type="checkbox" checked>misc</input>
+  </h2>
+</div>
+
+<div class="row block-basic block-project tech">
+  <div class="col-md-4 offset-md-2 project-descr">
+    <h3> Aptus Admin: a site management tool</h3>
+    <p> Category: Tech <br> Date: May 2018 </p>
+    <p> Aptus Admin is a tool for people managing sites for multiple clients. This being a collaborative project, I designed and developed the server side of it, focussing on scalability and security. Using Express and nodejs, I created all routes to and from the server. Since access to the site had to be restricted, I developed an authentication module from the ground up. The module includes JWT generation and validation and deals with cookie handling (sending and parsing) to store tokens. I also created a separate database module that deals with all the SQLite queries, making it easy for other developers to communicate to the database using set functions. </p>
+    <div class="btn btn-github blue">
+      <span class="fab fa-github" aria-hidden="true"></span>View source code
+    </div>
+  </div>
+  <div class="col-md-3 offset-md-1 img-circle" id="aptus-img"></div>
+</div>
+
+<div class="row block-basic block-project justify-content-md-center tech">
+  <div class="col-md-3 img-rounded img-left" id="oxo-p1-gif"></div>
+  <div class="col-md-3 project-descr middle-txt">
+    <h3> Tic Tac Toe</h3>
+    <p> Category: Tech <br> Date: February 2018 </p>
+    <p> This is a simple Noughts and Crosses game playable from the terminal, written in Java. I used this game to delve more into OOP after previously having written all my projects in C. The game lets two people play against each other over a local network. I also wanted to design the game in such a way, that it would be easily scalable, for example by exploring the idea of setting your own board dimensions. The game underwent thorough unit testing during development, which I also put on GitHub. </p>
+    <div class="btn btn-github blue">
+      <span class="fab fa-github" aria-hidden="true"></span>View source code
+    </div>
+  </div>
+  <div class="col-md-3 img-rounded img-right" id="oxo-p2-gif"></div>
+</div>
+
+<div class="row block-basic block-project tech">
+  <div class="col-md-6 project-descr fnt-white indigo teletext">
+    <h3> Teletext mode 7 parser </h3>
+    <p> Category: Tech <br> Date: January 2018 </p>
+    <p> This program renders a 40 x 25 character file to the screen, using control codes based on Richard Russell's description of Mode 7 on the <a target="_blank" href="http://www.bbcbasic.co.uk/tccgen/manual/tcgen2.html"> BBC Micro page</a>. The program is written in C and consist of an ADT file that parses the input file and a teletext file that renders the output data to the screen using SDL. I created a makefile to easily compile the program and a testing folder that shows all the testing that I've done (i.e., the types of visual, integrated, crash and unit testing). </p>
+    <div class="btn btn-github blue">
+      <span class="fab fa-github" aria-hidden="true"></span> View source code
+    </div>
+  </div>
+  <div class="col-md-6 black" id="teletext-img"> </div>
+</div>
+
+<div class="row block-basic block-project justify-content-md-center tech">
+  <div class="col-md-6 rounded-border pink fnt-white">
+    <div class="row justify-content-md-center">
+      <div class="col-md-8 project-descr project-descr-left">
+        <h3> Spelling checker</h3>
+        <p> Category: Tech <br> Date: Dec 2017 <br> </p>
+        <p> Using the same BST ADT that I creating for an earlier project, I wrote a spelling checker using binary search trees. This short program reads in a dictionary file and stores each word in a dictionary BST. It then reads in a second text file and checks each word of this file with the words stored in the dictionary BST. Each misspelt word is printed out and also added to a second (misspelt) BST so that no misspelled word is printed twice.</p>
+        <div class="btn btn-github blue">
+          <span class="fab fa-github" aria-hidden="true"></span>View source code
+        </div>
+      </div>
+      <div class="col-md-4 icon-project-right align-self-center">
+        <i class="fas fa-check-circle fa-9x"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row block-basic block-project tech travel justify-content-md-center">
+  <div class="col-md-3 img-left flex-space">
+      <div class="col-md-12 img-rounded" id="ccc1-img"></div>
+      <div class="col-md-12 img-rounded" id="ccc2-img"></div>
+  </div>
+  <div class="col-md-6">
+    <div class="row flex2">
+      <div class="col-md-12 middle-txt project-descr">
+        <h3> 34C3 Conference </h3>
+        <p> Category: Tech, Travel <br> Date: Dec 2017 </p>
+        <p> As usual, I traveled to Germany this december for the Chaos Computer Conference, the biggest hackers conference in the EU. I had a great time and thought I'd share a few of my highlights of the trip. Firstly, my favorite talk this year was the <a target="_blank" href="https://media.ccc.de/v/34c3-9064-the_ultimate_apollo_guidance_computer_talk">The Ultimate Apollo Guidance Computer Talk </a>, by Michael Steil and Christian Hessmann. Another talk, less technical but just as interesting, was Katika Kühnreich's talk <a target="_blank" href="https://media.ccc.de/v/34c3-8874-gamified_control"> Gamified Control? </a>, about China's Social Credit System. On top of that, Dennis Giese and DanielAW's talk <a target="_blank" href="https://media.ccc.de/v/34c3-9147-unleash_your_smart-home_devices_vacuum_cleaning_robot_hacking">Unleash your smart-home devices: Vacuum Cleaning Robot Hacking</a> was hilarious as well as really informative.<br><br>This year I also finally managed to grab a spot for the lock picking workshop, which was super fun (I think I'm gonna buy a set so I can start practising at home). I also messed around with wooden clothespins, a soldering kit and some LEDS's resulting in funky blinking LEDs that I could attach to anyhting (and anybody). A cool robot made me some yummy waffles, which I ate while gawking at all the expositions and installations being build in the Assembly hall. Also met up with other conference goers and traditionally drank lots of Club Mate and Tschunk! <br><br>After the conference (which was in Leipzig) I traveled to Berlin. Only having one day in Berlin (and having been in Berlin twice beforehand), I went to the <a target="_blank" href="http://www.story-of-berlin.de/eng/about_us"> The Story Of Berlin</a>, a really interesting and interactive museum about the city's history. This included a tour through an old bunker, which was built as a shelter in case of a nuclear disaster during the Cold War. Hightly recommend a visit! </p>
+        <div class="btn btn-github blue">
+          <span class="fab fa-github" aria-hidden="true"></span>Browse all 34C3 talks
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row block-basic block-project border-blue justify-content-md-center tech">
+  <div class="col-md-4 project-descr">
+    <h3> Visualising binary search trees</h3>
+    <p> Category: Tech <br> Date: Dec 2017 </p>
+    <p> I used this project to learn more about binary search trees. To start with, I implemented an Abstract Data Type (ADT) for binary search trees (BST). Using C as the language for this project, the ADT allows you store keys in an ordered manner and allows you to perform tasks such as finding the size of the tree, add entries to the tree and find a particular entry in the tree. For the visualisation part of the project I used Graphviz and the dot language. I implemented a dot ADT and a user file, that together create a dotfile of a string provided by the user. The generated dotfile is then rendered into a png, which visualises the tree. To play around with the functionalities of Graphviz a bit, I made each node blue when it contains the letter 'u'.</p>
+    <div class="btn btn-github blue">
+      <span class="fab fa-github" aria-hidden="true"></span>View source code
+    </div>
+  </div>
+  <div class="col-md-3 offset-md-1 img-circle" id="bst-img"></div>
+</div>
+
+<div class="row block-basic block-project tech">
+  <div class="col-md-6 black" id="hex8-img"> </div>
+  <div class="col-md-6 project-descr fnt-white blue teletext">
+    <h3> 8-bit processor simulation </h3>
+    <p> Category: Tech <br> Date: Dec 2017 </p>
+    <p> Using computer architector simulator <a href=""> ModuleSim </a>, I built a 8-bit processor. This project was really fun to do and, thanks to the simulation software, felt really 'hands on' despite not actually working with the real hardware. It helped increase my understanding of electrical components such as logic gates, registers, multiplexors and arithmetic units and was a good addition </p>
+    <div class="btn btn-github purple">
+      <span class="fab fa-github" aria-hidden="true"></span> View source code
+    </div>
+  </div>
+</div>
+
+<div class="row block-basic block-project justify-content-md-center tech">
+  <div class="col-md-6 rounded-border indigo fnt-white">
+    <div class="row justify-content-md-center">
+      <div class="col-md-4 align-self-center">
+        <i class="fas fa-balance-scale fa-9x"></i>
+      </div>
+      <div class="col-md-7 project-descr project-descr-right">
+        <h3> Text comparison </h3>
+        <p> Category: Tech <br> Date: Nov 2017 </p>
+        <p> This program - written in C - compares two text documents with each other and tells you how many unique words are contained in each file as well as giving you the amount of words both files have in common. To make this work, I wrote an ADT for sets that contains operations such as creating sets, add elements to them, return the size, check a set for a certain value etc. I also used Valgrind to check the program for memory loss, to ensure there were no leaks in my program. A makefile is provided to simply start the program (the files that need to be compared with each other need to be provided by the user of the program). </p>
+        <div class="btn btn-github blue">
+          <span class="fab fa-github" aria-hidden="true"></span>View source code
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row block-basic block-project tech bottom-block">
+  <div class="col-md-6 project-descr teletext orange fnt-black">
+    <h3> Particle plotter </h3>
+    <p> Category: Tech <br> Date: October 2017 </p>
+    <p> This was my first project in C and is a visualisation of <a target="_blank" href="https://en.wikipedia.org/wiki/Diffusion-limited_aggregation"> Diffusion Limited Aggregation</a>: randomly moving particles, cluster together and form an aggregation (think of crystallisation). I created a 2D array that would serve as a grid on which I would let the particles wander (having a static particle at the center of it). After implementing the logic aspect of it, I used the ncurses library to display the animation. </p>
+    <div class="btn btn-github blue">
+      <span class="fab fa-github" aria-hidden="true"></span> View source code
+    </div>
+  </div>
+  <div class="col-md-6 black" id="dla-img"> </div>
 </div>

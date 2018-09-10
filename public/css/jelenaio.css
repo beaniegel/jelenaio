@@ -1,5 +1,9 @@
 /* block styles */
 
+.hide {
+  display: none;
+}
+
 .block-basic {
   margin-top: 150px;
   margin-bottom: 150px;
@@ -30,9 +34,19 @@
   margin-left: 40px;
 }
 
-.block-title {
+h3 {
   font-family: 'Indie Flower', cursive;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 21px;
 }
 
 .logo-circle {
@@ -96,11 +110,6 @@
   font-family: 'Indie Flower', cursive;
 }
 
-img {
-  height: 80%;
-  width: 100%;
-}
-
 #skydive-img{
   background-image: url("../css/img/dive.gif");
   background-repeat: no-repeat;
@@ -162,7 +171,6 @@ li {
   border-style: solid;
   color:inherit;
   border-radius: 20px;
-  padding: 50px;
 }
 
 .view-more{
@@ -266,10 +274,6 @@ li {
   background-color: #F67280;
 }
 
-a {
-  color: inherit;
-}
-
 .btn-black {
   color: black;
 }
@@ -327,99 +331,6 @@ a {
   background-color: #F67280;
 }
 
-.job-descr {
-  text-align: center;
-}
-
-.hide {
-  color: white;
-}
-.block-jobs {
-  margin-top: -50px;
-  color: black;
-  text-align: center;
-  vertical-align: middle;
-}
-
-#job-temp {
-  margin-top: -25px;
-  border-style: hidden;
-}
-
-.job {
-  position: relative;
-  margin: 30px;
-  height: 150px;
-  border-radius: 100%;
-  border-width: thick;
-  border-style: solid;
-  vertical-align: middle;
-}
-
-.job-main {
-  margin: 10px;
-  height: 220px;
-  border-radius: 100%;
-  border-width: thick;
-  border-style: solid;
-}
-
-#transip{
-  background-image: url("../css/img/transip.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border-color: #1f4278;
-}
-
-#lek{
-  background-image: url("../css/img/lek.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border-color: #005c42;
-}
-
-#bain{
-  background-image: url("../css/img/bain.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border-color: #cc0001;
-}
-
-#iff{
-  background-image: url("../css/img/iff.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border-color: #1463ad;
-}
-
-#camfm{
-  background-image: url("../css/img/camfm.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border-color: #ffd42a;
-}
-
-#cedar{
-  background-image: url("../css/img/cedar.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border-color: #4f4f4f;
-}
-
-#gj{
-  background-image: url("../css/img/gj.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  border-color: #6eb51b;
-}
-
 .pink {
   background-color: #F67280;
 }
@@ -445,7 +356,6 @@ a {
 }
 
 .fnt-black {
-  background-color: inherit;
   color: black;
 }
 
@@ -457,4 +367,290 @@ a {
 .fnt-orange, {
   background-color: inherit;
   color: #F8B195;
+}
+
+/** project page **/
+
+.category {
+  margin: 10px;
+  border-radius: 0%;
+}
+
+
+.project-descr {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.project-descr-left {
+  border-right: thin solid white;
+}
+
+.project-descr-right {
+  border-left: thin solid white;
+}
+
+.img-circle {
+  border-radius: 50%;
+  background-position: top;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.img-rounded {
+  border-radius: 20px;
+}
+
+.block-project {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#aptus-img {
+  background-image: url("../css/img/aptus.png");
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+}
+
+.middle-txt {
+  border: medium dashed #F8B195;
+  border-radius: 20px;
+}
+
+.img-left {
+  margin-right: 125px;
+}
+
+.img-right {
+  margin-left: 125px;
+}
+
+#oxo-p1-gif {
+  background-image: url("../css/img/oxo2.gif");
+  background-repeat: no-repeat;
+  background-size: 213% 100%;
+  background-position: 0% 20%;
+}
+
+#oxo-p2-gif {
+  background-image: url("../css/img/oxo2.gif");
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-position: 97%;
+}
+
+.teletext {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 200px;
+  padding-right: 250px;
+}
+
+#teletext-img {
+  background-image: url("../css/img/teletext.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.flex-space {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.flex-center {
+  vertical-align: middle;
+}
+
+#ccc1-img {
+  background-image: url("../css/img/ccc1.jpeg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+  height: 300px;
+}
+
+#ccc2-img {
+  background-image: url("../css/img/ccc2.jpeg");
+  background-repeat: no-repeat;
+  position:relative;
+  background-size: 100% 100%;
+  height: 300px;
+}
+
+#bst-img {
+  background-image: url("../css/img/bst.png");
+  background-repeat: no-repeat;
+  background-position: 34px 14px;
+  background-size: 90% 90%;
+  border: thin solid black;
+  padding-left: 20px;
+}
+
+#hex8-img {
+  background-image: url("../css/img/hex8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#dla-img {
+  background-image: url("../css/img/dla1.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.bottom-block {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.btn-github {
+  margin-top: 40px;
+  padding: 10px;
+  font-size: 16px;
+  vertical-align: middle;
+  color: white;
+}
+
+.btn-github .fa-github {
+  font-size: 32px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+/* work page */
+#job-descr {
+  text-align: center;
+}
+
+.noClick {
+  pointer-events: none;
+}
+
+.block-jobs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.block-wheel {
+  margin-left: 100px;
+}
+
+.block-descr {
+  margin-left: -200px;
+  margin-right: 100px;
+}
+
+.block-descr-logo {
+  margin-bottom: 40px;
+}
+
+.job-static {
+  position: absolute;
+  height: 150px;
+  border-radius: 100%;
+  border-width: thick;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.job-cont {
+  position: relative;
+  margin: 30px;
+  padding: 0px;
+  height: 150px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.job-btn {
+  position: absolute;
+  height: 150px;
+  border-radius: 100%;
+  border-width: thick;
+  border-style: solid;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.job-main {
+  margin: 10px;
+  height: 220px;
+  border-radius: 100%;
+  border-width: thick;
+  border-style: solid;
+}
+
+.transip {
+  background-image: url("../css/img/transip.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #1f4278;
+}
+
+.lek{
+  background-image: url("../css/img/lek.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #005c42;
+}
+
+.bain{
+  background-image: url("../css/img/bain.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #cc0001;
+}
+
+.iff{
+  background-image: url("../css/img/iff.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #1463ad;
+}
+
+.camfm{
+  background-image: url("../css/img/camfm.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #ffd42a;
+}
+
+.cedar{
+  background-image: url("../css/img/cedar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #4f4f4f;
+}
+
+.gj{
+  background-image: url("../css/img/gj.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border-color: #6eb51b;
+}
+
+/* contact page*/
+.btn-linkedin {
+  color: white;
+}
+
+.btn-linkedin:hover {
+  color: #355C7D;
 }

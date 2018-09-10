@@ -17,14 +17,17 @@ function enableMenu() {
   enableBtn("contact-nav");
 }
 
-function enableBtn(btnId) {
-  var id = document.getElementById(btnId);
-  if (id) {
-    id.addEventListener("click", loadPage, false);
-    id.param = findTargetPage(btnId);
+function enableBtn(btnId, targetpage) {
+  var tp; var id = document.getElementById(btnId);
+  if (targetpage) {
+    tp = targetpage;
   }
   else {
-    console.log(id = "= id = null");
+    tp = findTargetPage(btnId);
+  }
+  if (id) {
+    id.addEventListener("click", loadPage, false);
+    id.param = tp;
   }
 }
 
