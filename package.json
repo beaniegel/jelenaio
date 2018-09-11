@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "jelena.io site",
   "main": "server.js",
+  "repository": "github:beaniegel/jelenaio",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
