@@ -1,18 +1,17 @@
-# Use node 4.4.5 LTS
-FROM node:4.4.5
-ENV LAST_UPDATED 20160605T165400
-
-# Copy source code
-COPY . /app
+# Use latest version of 8-stretch LTS
+FROM node:8-stretch
 
 # Change working directory
-WORKDIR /app
+WORKDIR /home/node/jelenaio
 
-# Install dependencies
-RUN npm install
+# Copy source code
+COPY . .
+
+# Install dependencies if necessary
+RUN npm install && chown -R node:node .
 
 # Expose API port to the outside
 EXPOSE 8080
 
 # Launch application
-CMD ["npm","start"]
+CMD ["node","server.js"]
